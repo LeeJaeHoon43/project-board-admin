@@ -70,7 +70,7 @@ public class UserAccount extends AuditingFields{
         this.getRoleTypes().add(roleType);
     }
 
-    public void addRoleType(Collection<RoleType> roleType){
+    public void addRoleTypes(Collection<RoleType> roleType){
         this.getRoleTypes().addAll(roleType);
     }
 
