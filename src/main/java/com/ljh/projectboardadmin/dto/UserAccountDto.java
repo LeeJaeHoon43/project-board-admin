@@ -2,7 +2,6 @@ package com.ljh.projectboardadmin.dto;
 
 import com.ljh.projectboardadmin.domain.UserAccount;
 import com.ljh.projectboardadmin.domain.constant.RoleType;
-
 import java.time.LocalDateTime;
 import java.util.Set;
 
