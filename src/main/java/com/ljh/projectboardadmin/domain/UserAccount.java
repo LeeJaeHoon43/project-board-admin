@@ -5,7 +5,6 @@ import com.ljh.projectboardadmin.domain.converter.RoleTypesConverter;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.LinkedHashSet;
