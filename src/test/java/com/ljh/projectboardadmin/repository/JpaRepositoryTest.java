@@ -30,7 +30,7 @@ class JpaRepositoryTest {
 
     @DisplayName("회원 정보 SELECT 테스트")
     @Test
-    void givenUserAccounts_whenSelecting_thenWorksFine(){
+    void givenAdminAccounts_whenSelecting_thenWorksFine(){
         // Given
 
         // When
@@ -44,7 +44,7 @@ class JpaRepositoryTest {
 
     @DisplayName("회원 정보 INSERT 테스트")
     @Test
-    void givenUserAccounts_whenInserting_thenWorksFine(){
+    void givenAdminAccounts_whenInserting_thenWorksFine(){
         // Given
         long previousCount = adminAccountRepository.count();
         AdminAccount adminAccount = AdminAccount.of("test", "pw", Set.of(RoleType.DEVELOPER), null, null, null);
@@ -58,7 +58,7 @@ class JpaRepositoryTest {
 
     @DisplayName("회원 정보 UPDATE 테스트")
     @Test
-    void givenUserAccountAndRolyType_whenUpdating_thenWorksFine(){
+    void givenAdminAccountAndRolyType_whenUpdating_thenWorksFine(){
         // Given
         AdminAccount adminAccount = adminAccountRepository.getReferenceById("admin");
         adminAccount.addRoleType(RoleType.DEVELOPER);
@@ -76,7 +76,7 @@ class JpaRepositoryTest {
 
     @DisplayName("회원 정보 DELETE 테스트")
     @Test
-    void givenUserAccount_whenDeleting_thenWorksFine(){
+    void givenAdminAccount_whenDeleting_thenWorksFine(){
         // Given
         long previousCount = adminAccountRepository.count();
         AdminAccount adminAccount = adminAccountRepository.getReferenceById("admin");
