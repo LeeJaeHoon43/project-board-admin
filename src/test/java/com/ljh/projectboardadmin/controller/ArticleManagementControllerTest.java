@@ -1,7 +1,6 @@
 package com.ljh.projectboardadmin.controller;
 
-import com.ljh.projectboardadmin.config.SecurityConfig;
-import com.ljh.projectboardadmin.domain.constant.RoleType;
+import com.ljh.projectboardadmin.config.TestSecurityConfig;
 import com.ljh.projectboardadmin.dto.ArticleDto;
 import com.ljh.projectboardadmin.dto.UserAccountDto;
 import com.ljh.projectboardadmin.service.ArticleManagementService;
@@ -15,7 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Set;
 import static org.mockito.BDDMockito.*;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -23,7 +21,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @DisplayName("컨트롤러 - 게시글 관리")
-@Import(SecurityConfig.class)
+@Import(TestSecurityConfig.class)
 @WebMvcTest(ArticleManagementController.class)
 class ArticleManagementControllerTest {
 
